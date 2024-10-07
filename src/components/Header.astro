@@ -1,0 +1,41 @@
+---
+import JsConfIco from '../components/images/JsConfIco.astro';
+import ArrowUp from './images/ArrowUp.astro';
+---
+
+<header class="w-full flex items-center min-h-24 justify-between px-10">
+    <JsConfIco class='size-7'/>
+    <ul class='flex gap-6 items-center w-[1100px] mx-0 text-sm'>
+        <li>Home</li>
+        <li>Agenda</li>
+        <li>Charlistas</li>
+        <li>Sponsors</li>
+        <li>¿Por qué?</li>
+        <li>Ticket</li>
+        <li>Ubicación</li>
+        <li>Voluntario</li>
+        <li>Código de Conducta</li>
+        <li>CFP</li>
+        <li>Preguntas</li>
+        <div class="flex items-center gap-3">
+            <img
+                class='w-9 rounded-full border border-yellow-500/80' 
+                src='https://porfolio-blue.netlify.app/images/foto-mia.webp' 
+            />
+            <ArrowUp class="size-2.7 hover:rotate-180 transition" />
+
+        </div>
+    </ul>
+</header>
+
+<style>
+    li {
+		padding: 0;
+		width: auto;
+	}
+	li:hover {
+		color: rgb(170, 161, 79);
+		border-bottom: 1px solid rgb(170, 161, 79);
+		transition: .3s;
+	}
+</style>
