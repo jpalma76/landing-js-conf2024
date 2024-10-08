@@ -1,0 +1,34 @@
+---
+import Button from "./Button.astro";
+import Star from './images/Star.astro';
+import Ticket from "./images/Ticket.astro";
+---
+
+<section class="w-full flex gap-x-7 ">
+    <button>
+        Sponsor
+        <Star class="size-4" />
+    </button> 
+    
+    <button>
+        Ticket
+        <Ticket class="size-4" />
+    </button> 
+</section>
+
+<style>
+    button {
+        padding: 8px 20px;
+        border: 1px solid;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        transition: .4s;
+        border-radius: 6px;
+    }
+    button:hover {
+        background: #e3e3e3;
+        color: #000;
+        border: 1px solid #000;
+    }
+</style>

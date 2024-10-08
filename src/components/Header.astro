@@ -3,7 +3,7 @@ import JsConfIco from '../components/images/JsConfIco.astro';
 import ArrowUp from './images/ArrowUp.astro';
 ---
 
-<header class="w-full flex items-center min-h-24 justify-between px-10">
+<header class="w-full flex items-center min-h-20 justify-between px-10">
     <JsConfIco class='size-7'/>
     <ul class='flex gap-6 items-center w-[1100px] mx-0 text-sm'>
         <li>Home</li>
@@ -22,7 +22,7 @@ import ArrowUp from './images/ArrowUp.astro';
                 class='w-9 rounded-full border border-yellow-500/80' 
                 src='https://porfolio-blue.netlify.app/images/foto-mia.webp' 
             />
-            <ArrowUp class="size-2.7 hover:rotate-180 transition" />
+            <ArrowUp class="size-3 hover:rotate-180 transition-[0.3s]" />
 
         </div>
     </ul>
@@ -38,4 +38,9 @@ import ArrowUp from './images/ArrowUp.astro';
 		border-bottom: 1px solid rgb(170, 161, 79);
 		transition: .3s;
 	}
+    @media (max-width: 1200px) {
+        li {
+            display: none;
+        }
+    }
 </style>
