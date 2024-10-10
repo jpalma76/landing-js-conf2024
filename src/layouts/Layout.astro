@@ -4,6 +4,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
+// Supports weights 100-900
+import '@fontsource-variable/jost';
 ---
 
 <!doctype html>
@@ -23,7 +25,7 @@ const { title } = Astro.props;
 <style is:global>
 	
 	body {
-		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-family: 'Jost Variable';
 		background: #080808;
 		color: #fff;
 		width: 100%;

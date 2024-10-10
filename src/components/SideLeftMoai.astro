@@ -1,0 +1,39 @@
+---
+import Moai from "./Moai.astro";
+import VerticalBar from "./VerticalBar.astro";
+
+---
+
+<article class="w-[300px] h-[500px] flex flex-col items-center">
+    <VerticalBar />
+    <div class="moai-container">
+        <span class="circle"></span>
+        <Moai class="moai size-9 m-0 p-0"/>
+    </div>
+    <VerticalBar />
+</article>
+
+<style>
+    .moai-container {
+        position: relative;
+        display: flex;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .moai {
+        position: relative;
+        z-index: 10;
+    }
+    .circle {
+
+        background-color: yellow;
+        margin-bottom: 40px;
+        border-radius: 50%;
+        box-shadow: 20px 20px 25px 15px yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+    }
+</style>
