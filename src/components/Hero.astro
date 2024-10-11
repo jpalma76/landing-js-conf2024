@@ -1,20 +1,41 @@
 ---
+interface Props {
+    TorresDelPaine: string;
+}
+
 import TorresDelPaine from './images/TorresDelPaine.astro';
 import JsConfTitle from './images/JsConfTitle.astro';
 import SectionButtons from './SectionButtons.astro';
-import Section from './Section.astro';
 ---
-<Section>
-    <div class="flex flex-col lg:flex-row w-[80%] items-center h-[600px] gap-x-48 transition-all">
+<section class="mt-36">
+    <div id="hero" class="flex flex-col lg:flex-row w-[90%] h-auto gap-y-24 md:gap-x-24 items-center transition-all">
         <article class="flex flex-col min-w-[400px] w-[50%] gap-y-7">
-            <JsConfTitle class="w-[337px] h-[182px]"/>
-            <p class="font-xs max-w-[600px]">Acompáñanos, en la primera edición Chilena, de la más prestigiosa conferencia de JavaScript. 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones, este 03 y 04 de Febrero.</p>
+            <JsConfTitle class="max-w-[337px] h-auto"/>
+            <p class="font-xs max-w-[400px]">Acompáñanos, en la primera edición Chilena, de la más prestigiosa conferencia de JavaScript. 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones, este 03 y 04 de Febrero.</p>
             <SectionButtons />
         </article>
-        <div class="min-w-[500px] flex justify-center items-center h-[500px]">
-            <TorresDelPaine class="w-[450px] h-auto rounded-full" />
+        <div class="w-[70%] flex justify-center items-center h-auto">
+            <TorresDelPaine 
+                class="max-w-[500px] h-auto rounded-full" 
+            />
         </div>
     </div>
-</Section>
+</section>
 
+<style>
+    #hero {
+        width: 100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    p {
+        width: 350px;
+    }
 
+    @media(max-width: 750px) {
+        #hero {
+            align-items: center;
+            padding-left: 55px;
+        }
+    }
+</style>

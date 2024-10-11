@@ -4,11 +4,11 @@ import VerticalBar from "./VerticalBar.astro";
 
 ---
 
-<article class="w-[300px] h-[500px] flex flex-col items-center">
+<article class="w-auto md:w-[200px] h-[300px] flex flex-row md:flex-col items-center gap-0 md:gap-3 ">
     <VerticalBar />
     <div class="moai-container">
         <span class="circle"></span>
-        <Moai class="moai size-9 m-0 p-0"/>
+        <Moai class="moai size-10"/>
     </div>
     <VerticalBar />
 </article>
@@ -29,7 +29,7 @@ import VerticalBar from "./VerticalBar.astro";
         background-color: yellow;
         margin-bottom: 40px;
         border-radius: 50%;
-        box-shadow: 19px 18px 25px 15px rgb(226, 226, 24);
+        box-shadow: 18px 18px 30px 17px rgb(226, 226, 24);
         display: flex;
         justify-content: center;
         align-items: center;

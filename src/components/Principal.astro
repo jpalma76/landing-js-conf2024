@@ -1,13 +1,21 @@
 ---
 import Section from "./Section.astro";
-import SideLeftMoai from "./SideLeftMoai.astro";
+import CardLeft from "./CardLeft.astro";
 
 ---
 
-<Section>
-    <SideLeftMoai />
-    <article class="w-[800px] flex flex-col h-[300px] items-center justify-center">
-        <h2 class="text-5xl font-bold mb-7">· Que es la JsConf</h2>
-        <p class="text-2xl my-2 font-semibold">La JSConf es una <span class="text-[#ede060]">conferencia técnica única a nivel mundial</span> con una visión de mejorar la comunidad tecnológica, haciéndola más diversa y humana.</p>
+<section class="flex flex-col md:flex-row md: justify-center gap-10 items-center my-32">
+    <CardLeft />
+    <article class="flex flex-col ml-10 w-full md:w-[550px] justify-center h-auto">
+        <h2 class="text-5xl font-bold mb-7">Que es la JsConf</h2>
+        <p class="w-[360px] text-2xl font-semibold">La JSConf es una <span class="text-[#ede060]">conferencia técnica única a nivel mundial</span> con una visión de mejorar la comunidad tecnológica, haciéndola más diversa y humana.</p>
     </article>    
-</Section>
+</section>
+
+<style>
+    @media(max-width: 400px) {
+        p {
+            width: 370px;
+        }
+    }
+</style>

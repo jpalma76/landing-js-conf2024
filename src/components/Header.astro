@@ -3,9 +3,9 @@ import JsConfIco from '../components/images/JsConfIco.astro';
 import ArrowUp from './images/ArrowUp.astro';
 ---
 
-<header class="flex items-center min-h-24 justify-between gap-x-36 px-10 fixed bg-[#080808]">
+<header class="w-full flex items-center h-20 justify-between px-16 fixed bg-[#080808]">
     <JsConfIco class='size-7'/>
-    <ul class='flex gap-6 items-center w-[1000px] mx-0 text-sm'>
+    <ul class='flex gap-6 items-center w-auto mx-0 text-md'>
         <li>Home</li>
         <li>Agenda</li>
         <li>Charlistas</li>
@@ -41,6 +41,13 @@ import ArrowUp from './images/ArrowUp.astro';
     @media (max-width: 1200px) {
         li {
             display: none;
+        }
+    }
+
+    @media(max-width: 600px) {
+        header {
+            width: 100%;
+            justify-content: space-between;
         }
     }
 </style>

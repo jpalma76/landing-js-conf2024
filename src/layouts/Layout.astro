@@ -24,10 +24,8 @@ import "@fontsource-variable/jost";
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="px-[50px]">
-		<div>
-			<slot />
-		</div>
+	<body class="">
+		<slot />
 	</body>
 </html>
 <style is:global>
@@ -40,6 +38,6 @@ import "@fontsource-variable/jost";
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		box-sizing: border-box;
+		box-sizing: content-box;
 	}
 </style>
