@@ -1,9 +1,10 @@
 ---
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 // Supports weights 100-900
 import "@fontsource-variable/jost";
 ---
@@ -12,7 +13,7 @@ import "@fontsource-variable/jost";
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/jsConf.svg" />
 		<meta name="generator" content={Astro.generator} />
