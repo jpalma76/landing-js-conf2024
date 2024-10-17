@@ -1,5 +1,5 @@
 ---
-import TorresDelPaine from './images/TorresDelPaine.astro';
+//import TorresDelPaine from './image/TorresDelPaine.astro';
 import JsConfTitle from './images/JsConfTitle.astro';
 import SectionButtons from './SectionButtons.astro';
 ---
@@ -7,14 +7,16 @@ import SectionButtons from './SectionButtons.astro';
     <div id="hero" class="flex flex-col lg:flex-row w-[400px] md:max-w-[600px] h-auto gap-y-24 md:gap-x-24 items-center transition-all">
         <article class="flex flex-col min-w-[400px] w-[50%] gap-y-7">
             <JsConfTitle class="max-w-[337px] h-auto"/>
-            <p class="font-xs max-w-[400px]">Acompáñanos, en la primera edición Chilena, de la más prestigiosa conferencia de JavaScript. 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones, este 03 y 04 de Febrero.</p>
+            <div class="font-xs max-w-[400px]">Acompáñanos, en la primera edición Chilena, de la más prestigiosa conferencia de JavaScript. 2 días de Charlistas internacionales, comunidad, aprendizaje y conexiones, este 03 y 04 de Febrero.</div>
             <SectionButtons />
         </article>
-        <div class="max-w[500px] flex  items-center justify-center mx-[-50px]">
-            <TorresDelPaine 
-                class="size-96 rounded-full m-0" 
-                alt="Torres  del Paine"
-            />
+        <div id="paisaje-container" class="w[700px] flex items-center justify-center">
+            <div class="w-[700px] h-[650px] font-mono relative opacity-100">
+                <div class="text-yellow-500 w-[480px] ml-auto text-right mt-5 mb-72 opacity-40">Torres del paine <span class="text-white">- Región de Magallanes</span></div>
+                <p class="text-yellow-500 bg-[#111] w-[300px] ml-auto text-right mb-10 opacity-70">Lugar <span class="text-slate-200 w-auto">("Santiago de Chile")</span></p>
+                <p class="text-yellow-500 bg-[#111] w-[420px] ml-0 mb-10 opacity-70">Fecha <span class="text-slate-200 w-full">("05, 06, y 07 de Diciembre, 2024")</span></p>
+                <p class="text-yellow-500 bg-[#111] w-[170px] ml-auto mr-56 opacity-70">Hora <span class="text-slate-200 w-auto">("09:00")</span></p>
+            </div>
         </div>
     </div>
 </section>
@@ -25,8 +27,24 @@ import SectionButtons from './SectionButtons.astro';
         justify-content: center;
         margin: 0 auto;
     }
-    p {
-        width: 350px;
+
+    #paisaje-container {
+        width: 730px;
+        height: 650px;
+        background-image: url('./images/torresDelPaine.png') ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        border-radius: 50%;
+        font-size: 17px;
+    }
+
+    #paisaje-container p {
+        height: 35px;
+        border: 1px solid transparent;
+        padding: 3px 10px;
+        text-align: center;
+        border-radius: 7px;
     }
 
     @media(max-width: 750px) {
