@@ -26,7 +26,12 @@ import SectionButtons from "./SectionButtons.astro";
             id="image-container"
             class="size-72 md:size-96 rounded-full mb-10"
         >
-        <div class="mask-image"></div>
+            <div class="text-image">
+                <p class="text-yellow-500 z-10 -ml-[20px] md:ml-[150px] w-[400px] mt-3 m-20 md:mb-40 opacity-50">Torres del paine <span class="text-white">- Región de Magallanes</span></p>
+                <p class="text-yellow-500 bg-[#111]/60 w-[170px] py-2 px-3 ml-[150px] md:ml-[230px] mb-3 opacity-70">Lugar <span class="text-slate-200 w-auto">("Santiago")</span></p>
+                <p class="text-yellow-500 bg-[#111]/60 w-[350px] py-2 px-3 ml-0 mb-3 opacity-70">Fecha <span class="text-slate-200 w-full">("05, 06, y 07 de Diciembre, 2024")</span></p>
+                <p class="text-yellow-500 bg-[#111]/60 w-[170px] py-2 px-3 ml-24 mr-56 opacity-70">Hora <span class="text-slate-200 w-auto">("09:00")</span></p>
+            </div>
         </div>
     </div>
 </Section>
@@ -41,13 +46,13 @@ import SectionButtons from "./SectionButtons.astro";
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        
     }
-    .mask-image {
-        width: 100%;
-        z-index: 10;
-        position: relative;
-        background-image: radial-gradient(circle, black 80%, transparent);
+    .text-image p {
+        text-align: center;
+        font-family: monospace;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 7px;
     }
 
     @media (max-width: 600px) {
@@ -63,8 +68,6 @@ import SectionButtons from "./SectionButtons.astro";
             padding: 30px 50px;
         }
 
-        #principal-div p {
-           
-        }
+        
     }
 </style>
