@@ -3,18 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import Principal from '../components/Principal.astro';
-import PrincipalDate from '../sections/PrincipalDate.astro';
+import PrincipalDate from '../components/PrincipalDate.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
 	title="Landing JS-Conf2024"
-	description="Proyecto - landing de la JS-Conf 2024 desarrollada por Juan Palma @jpalma76"
+	description="Proyecto - landing de la JSConf2024 desarrollada por Juan Palma @jpalma76"
 >
 	<Header />	
-	<main class="w-[80%] min-h-[100vh] flex flex-col items-center mx-10">
+	<main class="w-[90%] md:w-[75%] min-h-screen gap-y-12 flex flex-col">
 		<Hero />
 		<Principal />
 		<PrincipalDate />
+		<Footer />
 	</main>
 	
 </Layout>

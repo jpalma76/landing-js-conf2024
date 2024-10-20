@@ -4,20 +4,20 @@ import VerticalBar from "./VerticalBar.astro";
 
 ---
 
-<article class="w-auto md:w-[200px] h-[300px] flex flex-row md:flex-col items-center gap-0 md:gap-3 ">
-    <VerticalBar />
+<article class="w-auto md:w-[200px] md:max-h-[300px] flex flex-row md:flex-col items-center gap-0 md:gap-3 ">
+    <VerticalBar class="vertical" />
     <div class="moai-container">
         <span class="circle"></span>
         <Moai class="moai size-10" alt="Moai cuadrado"/>
     </div>
-    <VerticalBar />
+    <VerticalBar class="vertical"/>
 </article>
 
 <style>
     .moai-container {
         position: relative;
         display: flex;
-        z-index: 1;
+        z-index: 5;
         justify-content: center;
         align-items: center;
     }
@@ -36,5 +36,12 @@ import VerticalBar from "./VerticalBar.astro";
         justify-content: center;
         align-items: center;
         z-index: 10;
+    }
+
+    @media(max-width: 600px) {
+        article {
+            z-index: 0;
+            margin-top: 150px;
+        }
     }
 </style>
