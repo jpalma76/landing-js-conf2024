@@ -2,6 +2,10 @@
 import Section from "./Section.astro";
 import ChileFlag from "./ChileFlag.astro";
 import Countdown from './Countdown.astro';
+import XIcon from "./icon-component/XIcon.astro";
+import LinkedInIcon from "./icon-component/LinkedInIcon.astro";
+import GitHubIcon from "./icon-component/GitHubIcon.astro";
+import SocialButton from "./SocialButton.astro";
 ---
 
 <Section>
@@ -36,6 +40,23 @@ import Countdown from './Countdown.astro';
       <span>Pasen por mis RRSS y dejen su saludito.</span>
       <span class="flex gap-x-3 items-center py-auto">Peñaflor (Chile) <ChileFlag class="size-6"/></span>
     </h3>
+
+    <div class="flex text-center text-sm gap-x-4 my-10">
+      <SocialButton url="https://x.com/JPALMA76">
+        <XIcon class="size-4"/>
+        Twitter
+      </SocialButton>
+
+      <SocialButton url="https://www.linkedin.com/in/juan-palma-alvarez/">
+        <LinkedInIcon class="size-4"/>
+          LinkedIn
+      </SocialButton>
+
+      <SocialButton url="https://github.com/jpalma76">
+        <GitHubIcon class="size-4" />
+        GitHub
+      </SocialButton>
+  </div>
     
     <a
       class={`
@@ -58,5 +79,8 @@ import Countdown from './Countdown.astro';
       Gracias por ver
     </a>
   </div>
+
+  <div></div>
+
 </Section>
 
