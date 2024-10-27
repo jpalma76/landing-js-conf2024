@@ -1,2 +1,4 @@
 descargué la imagen BranchEvent para la tercera sección, que
 esperar del evento.
+
+probar formas de hacer border con gradiente
