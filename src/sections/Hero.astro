@@ -1,0 +1,104 @@
+---
+import JsConfTitle from "../components/JsConfTitle.astro";
+import Section from "../components/Section.astro";
+import SectionButtons from "../components/SectionButtons.astro";
+---
+<Section>
+    <div
+        id="principal-div"
+        class="w-[100%] min-h-[500px] flex flex-col lg:flex-row justify-evenly items-center"
+    >
+        <div id="left" class="flex flex-col w-[39%] h-[80%] px-5 gap-y-5">
+            <JsConfTitle class="w-[230px] h-[150px]" />
+
+            <p class="text-sm text-justify mb-5">
+                Acompáñanos, en la segunda edición Chilena, de la más
+                prestigiosa conferencia de JavaScript. 1 día de talleres, 2 días
+                de Charlistas internacionales, comunidad, aprendizaje y
+                conexiones, este 5, 6 y 7 de diciembre, 2024
+            </p>
+
+            <SectionButtons />
+        </div>
+
+        <div
+            id="image-container"
+            class="size-84 md:size-[500px] rounded-full mb-10"
+        >
+            <div class="text-image">
+                <p class="text-yellow-500 z-10 ml-[20px] md:ml-[125px] w-[260px] mt-6 m-20 md:mb-40 opacity-50">Torres del paine <span class="text-white">- Región de Magallanes</span></p>
+                <p class="text-yellow-500 bg-[#111]/40 w-[150px] py-2 px-3 ml-[150px] md:ml-[320px] mb-10">Lugar <span class="text-slate-200 w-auto">("Santiago")</span></p>
+                <p class="text-yellow-500 bg-[#111]/40 w-[310px] py-2 px-3 ml-10 mb-10">Fecha <span class="text-slate-200 w-full">("05, 06, y 07 de Diciembre, 2024")</span></p>
+                <p class="text-yellow-500 bg-[#111]/40 w-[120px] py-2 px-3 ml-48 mr-56">Hora <span class="text-slate-200 w-auto">("09:00")</span></p>
+            </div>
+        </div>
+    </div>
+</Section>
+
+<style>
+    
+    #image-container {
+        background-image: 
+        radial-gradient(
+            transparent 25%,
+            #090907 60%
+            ),
+            url('../components/torres-del-paine.webp');
+            
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .5s;
+    }
+    #image-container:hover {
+        background-image:
+            radial-gradient(
+                transparent 25%,
+                #090907 60%
+                ), 
+            url('../components/images/homatopopi.png');
+            rotate: 1deg infinite;
+        transition: .5s;
+    }
+    .text-image p {
+        text-align: center;
+        font-family: monospace;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 7px;
+    }
+
+    @media (max-width: 60%) {
+        #principal-div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #left {
+            width: 100%;
+            gap: 10px;
+            padding: 30px 50px;
+        }
+        #right {
+            width: 80%;
+        }
+
+    }
+    @media(max-width:380px) {
+        #principal-div #left {
+            width: 80%;
+        }
+        #principal-div #left p {
+            text-align: left;
+        }
+        #image-container {
+            width: 300px;
+            height:300px;
+        }
+        #image-container .text-image p {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+</style>

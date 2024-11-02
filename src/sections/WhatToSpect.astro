@@ -1,48 +1,149 @@
 ---
 import BranchEvent from "../components/BranchEvent.astro";
 import Section from "../components/Section.astro";
-
 ---
 
 <Section>
-    <div class="spect-info min-h-[450px] mx-auto px-7 flex flex-col lg:flex-row items-center gap-x-10 lg:gap-y-6 transition-all">
-        <div class="flex flex-col px-5 w-50px lg:w-[55%] items-center lg:justify-center lg:pl-14">
-            <h1 class="text-2xl md:text-3xl xl:text-5xl font-extrabold py-8 md:py-6">¿QUE ESPERAR DEL EVENTO?</h1>
-            <p class="text-center w-[95%] mb-5">Tendremos preparadas muchas actividades programadas y un ambiente solo para tí, no necesitarás saber inglés, contaremos con intérpretes para que no te pierdas ningún detalle de tu expositor favorito</p>
-        </div>
-        <div class="branch-event flex items-center min-h-full">
-            <BranchEvent class="mx-3 my-1" />
-            <ul class="font-semibold min-h-[490px] pt-24">
-                <li class="mt-0 mb-9 md:mb-4">Workshops dentro del mismo recinto</li>
-                <li class="mb-7 md:mb-3">Áreas de descanso</li>
-                <li class="mb-4 md:mb-2">Swag bag con temática de la JSConf Chile 2024</li>
-                <li class="mb-7 ml-4">Código de conducta</li>
-                <li class="ml-4">Coffee Break los días del evento</li>
-            </ul>
+    <!-- contedor de gradiente -->
+    <div
+        class="spect-gradient"
+    >
+        <div
+            class="spect-content h-[400px] gap-x-[3%] bg-[#090907]"
+        >
+            <div class="left">
+                <h1 class="w-[400px] font-extrabold uppercase">Que esperar del evento?</h1>
+                <p class="w-[500px]">
+                    Tendremos preparadas muchas actividades programadas y un ambiente solo para tí, no necesitarás saber inglés, contaremos con intérpretes para que no te pierdas ningún detalle de tu expositor favorito.
+                </p>
+            </div>
+
+            <div class="right">
+                <BranchEvent id="image-branch" class="mt-14" />
+                <ul>
+                    <li>Workshop dentro del mismo recinto </li>
+                    <li>Áreas de descanso</li>
+                    <li>Swag bag con temática de la JSConf Chile 2024</li>
+                    <li>Código de conducta</li>
+                    <li>Coffee Break los días del evento</li>
+                </ul>
+            </div>
         </div>
     </div>
-
 </Section>
 
 <style>
-    .spect-info {
+    .spect-gradient {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        min-height: 450px;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-        border: 2px solid transparent;        
-        border-image: linear-gradient(to top right, #11110d, #676223 ) 1;
-        border-width: 1px;
+        border-radius: 20px;
+        background-image: linear-gradient(45deg,#090907 0%,#b0b843 100%)
     }
 
-    .spect-info p {
+    .spect-content {
+        width: 99.7%;
+        height: 99%;
+        display: flex;
+        justify-content: center;
+        padding: 1rem 5rem;
+        border-radius: 20px;
+    }
+
+    .spect-content div {
+        min-height: 350px;
+        gap: 10px;
+    }
+
+    .left {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 10px;
+    }
+
+    .left h1 {
+        width: 400px;
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        word-spacing: 6px;
+        line-height: 1.1;
+    }
+
+    .left p {
+        width: 500px;
         font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
     }
 
-    .branch-event ul li {
+    .right {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .right ul {
+        margin-top: 190px;        
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 33px;
+    }
+
+    .right ul li {
+        text-align: left;
         font-size: 16px;
+        font-weight:500;
     }
 
-    @media(max-width:650px) {
-        .branch-event ul li {
-            font-size: 15px;
+    @media(max-width: 1440px) {
+        .spect-content {
+            flex-direction: column;
+            width: 99%;
+            text-align: center;
+            align-items: center;
+        }
+        .spect-content .left h1 {
+            width: 100%;
+            font-size: 36px;
+        }
+    }
+
+    @media(max-width: 840px) {
+        .spect-content {
+            padding: 30px 40px;
+        }
+        .spect-content .left h1 {
+            width: 100%;
+            font-size: 24px;
+        }
+        .spect-content .left p {
+            width: 400px;
+            margin: 0 auto;
+        }
+        #image-branch {
+            margin-left: 10%;
+        }
+    }
+
+    @media(max-width: 600px) {
+        .spect-content .left h1 {
+            font-size: 19px;    
+        }
+        .spect-content .left p {
+            width: 290px;
+            font-size: 14px;
+            text-align: justify;
         }
     }
 </style>
