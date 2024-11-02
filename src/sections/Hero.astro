@@ -67,7 +67,7 @@ import SectionButtons from "../components/SectionButtons.astro";
         border-radius: 7px;
     }
 
-    @media (max-width: 60%) {
+    @media (max-width: 600px) {
         #principal-div {
             display: flex;
             flex-direction: column;
@@ -79,25 +79,48 @@ import SectionButtons from "../components/SectionButtons.astro";
             gap: 10px;
             padding: 30px 50px;
         }
+
         #right {
             width: 80%;
         }
 
+        #image-container {
+            width: 440px;
+            height:460px;
+        }
+
+        #image-container .text-image p:nth-child(1) {
+            margin-left: 100px;
+            margin-bottom: 70px;
+        }
+        #image-container .text-image p:nth-child(2) {
+            margin-left: 250px;
+            margin-bottom: 30px;
+        }
+        #image-container .text-image :nth-child(3) {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
     }
+
     @media(max-width:380px) {
         #principal-div #left {
             width: 80%;
         }
+
         #principal-div #left p {
             text-align: left;
         }
+
         #image-container {
             width: 300px;
             height:300px;
         }
+
         #image-container .text-image p {
             margin-bottom: 32px;
             text-align: center;
         }
+
     }
 </style>
