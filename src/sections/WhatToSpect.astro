@@ -4,29 +4,24 @@ import Section from "../components/Section.astro";
 ---
 
 <Section>
-    <!-- contedor de gradiente -->
-    <div
-        class="spect-gradient"
-    >
-        <div
-            class="spect-content h-[400px] gap-x-[3%] bg-[#090907]"
-        >
+    <div class="spect-gradient">
+        <div class="spect-content">
             <div class="left">
                 <h1 class="w-[400px] font-extrabold uppercase">Que esperar del evento?</h1>
-                <p class="w-[500px]">
+                <p class="presentation">
                     Tendremos preparadas muchas actividades programadas y un ambiente solo para tí, no necesitarás saber inglés, contaremos con intérpretes para que no te pierdas ningún detalle de tu expositor favorito.
                 </p>
             </div>
 
-            <div class="right">
-                <BranchEvent id="image-branch" class="mt-14" />
-                <ul>
-                    <li>Workshop dentro del mismo recinto </li>
-                    <li>Áreas de descanso</li>
-                    <li>Swag bag con temática de la JSConf Chile 2024</li>
-                    <li>Código de conducta</li>
-                    <li>Coffee Break los días del evento</li>
-                </ul>
+            <div class="right pt-8">
+                <BranchEvent id="image-branch" />
+                <div>
+                    <p class="mb-7">Workshop dentro del mismo recinto </p>
+                    <p class="mb-8">Áreas de descanso</p>
+                    <p class="mb-8">Swag bag con temática de la JSConf Chile 2024</p>
+                    <p class="mb-8 underline text-yellow-400/80">Código de conducta</p>
+                    <p class="">Coffee Break los días del evento</p>
+                </div>
             </div>
         </div>
     </div>
@@ -37,22 +32,24 @@ import Section from "../components/Section.astro";
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        min-height: 450px;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        border-radius: 20px;
-        background-image: linear-gradient(45deg,#090907 0%,#b0b843 100%)
+        min-width: 77vw;
+        min-height: 30vw;
+        border-radius: 36px;
+        background-image: linear-gradient(45deg,#3d3d2d 10%,#d4d114 100%);
+        padding: 2.5px;
+        margin: auto;
     }
 
     .spect-content {
-        width: 99.7%;
-        height: 99%;
+        width: 77vw;
+        min-height: 30vh;
+        background-color: #090907;
         display: flex;
         justify-content: center;
         padding: 1rem 5rem;
-        border-radius: 20px;
+        border-radius: 36px;
+        margin: 0;
+        gap: 40px;
     }
 
     .spect-content div {
@@ -61,12 +58,10 @@ import Section from "../components/Section.astro";
     }
 
     .left {
-        width: 550px;
+        width: 500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 2rem;
-        padding: 10px;
     }
 
     .left h1 {
@@ -76,10 +71,11 @@ import Section from "../components/Section.astro";
         letter-spacing: 2px;
         word-spacing: 6px;
         line-height: 1.1;
+        margin-bottom: 20px;
     }
 
-    .left p {
-        width: 500px;
+    .left .presentation {
+        width: 450px;
         font-size: 16px;
         line-height: 1.5;
         font-weight: 500;
@@ -87,23 +83,21 @@ import Section from "../components/Section.astro";
 
     .right {
         width: 500px;
+        height: auto;
+        margin-bottom: 20px;
         display: flex;
-        align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
     
-    .right ul {
-        margin-top: 190px;        
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        gap: 33px;
+    .right div {
+        margin-top: 40px;
     }
 
-    .right ul li {
+    .right div p {
         text-align: left;
+        width: auto;
         font-size: 16px;
-        font-weight:500;
+        font-weight:600;
     }
 
     @media(max-width: 1250px) {
@@ -123,12 +117,13 @@ import Section from "../components/Section.astro";
         .spect-content {
             padding: 30px 40px;
         }
+
         .spect-content .left h1 {
-            width: 100%;
+            max-width: 70%;
             font-size: 24px;
         }
         .spect-content .left p {
-            width: 400px;
+            max-width: 300px;
             margin: 0 auto;
         }
         #image-branch {

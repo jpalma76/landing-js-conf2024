@@ -1,0 +1,94 @@
+---
+
+---
+
+<div id="image-container" class="rounded-full mb-10">
+    <div class="text-image">
+        <p
+            class="text-yellow-500 z-10 ml-[20px] md:ml-[125px] w-[260px] mt-6 m-20 md:mb-40 opacity-50"
+        >
+            Torres del paine <span class="text-white"
+                >- Región de Magallanes</span>
+        </p>
+        <p
+            class="text-yellow-500 bg-[#111]/40 w-[150px] py-2 px-3 ml-[150px] md:ml-[300px] mb-10"
+        >
+            Lugar <span class="text-slate-200 w-auto">("Santiago")</span>
+        </p>
+        <p class="text-yellow-500 bg-[#111]/40 w-[310px] py-2 px-3 ml-8 mb-10">
+            Fecha <span class="text-slate-200 w-full"
+                >("05, 06, y 07 de Diciembre, 2024")</span>
+        </p>
+        <p class="text-yellow-500 bg-[#111]/40 w-[120px] py-2 px-3 ml-44 mr-56">
+            Hora <span class="text-slate-200 w-auto">("09:00")</span>
+        </p>
+    </div>
+</div>
+
+<style>
+    #image-container {
+        width: 450px;
+        height: 450px;
+        background-color: blueviolet;
+        margin: auto 0;
+        background-image: 
+        radial-gradient(
+            transparent 25%,
+            #090907 60%
+            ),
+            url('../components/torres-del-paine.webp'); opacity: 0.7;
+            
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        transition: .5s;
+    }
+    #image-container:hover {
+        background-image:
+            radial-gradient(
+                transparent 25%,
+                #090907 60%
+                ), 
+            url('../components/images/homatopopi.png'); opacity: 0.4;
+        transition: .5s;
+    }
+    .text-image p {
+        text-align: center;
+        font-family: monospace;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 7px;
+    }
+    @media (max-width: 600px) {
+        #image-container {
+            width: 440px;
+            height:460px;
+        }
+
+        #image-container .text-image p:nth-child(1) {
+            margin-left: 100px;
+            margin-bottom: 70px;
+        }
+        #image-container .text-image p:nth-child(2) {
+            margin-left: 250px;
+            margin-bottom: 30px;
+        }
+        #image-container .text-image :nth-child(3) {
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media(max-width:380px) {
+        #image-container {
+            width: 300px;
+            height:300px;
+        }
+
+        #image-container .text-image p {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+    }
+</style>

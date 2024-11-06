@@ -1,6 +1,17 @@
 ---
 ---
-<section class="max-w-full h-auto flex flex-col items-center justify-center my-20 p-0">
+<section class="section-container">
     <slot />
 </section>
 
+<style>
+    .section-container {
+        width: 90vw;
+        min-height: 550px;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+</style>
