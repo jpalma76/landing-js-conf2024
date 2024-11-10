@@ -14,7 +14,7 @@ import Section from "../components/Section.astro";
             </div>
 
             <div class="right pt-8">
-                <BranchEvent id="image-branch" />
+                <BranchEvent />
                 <div>
                     <p class="mb-7">Workshop dentro del mismo recinto </p>
                     <p class="mb-8">Áreas de descanso</p>
@@ -32,113 +32,77 @@ import Section from "../components/Section.astro";
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 77vw;
-        min-height: 30vw;
+        max-width: 1100px;
+        min-height: 400px;
         border-radius: 36px;
         background-image: linear-gradient(45deg,#3d3d2d 10%,#d4d114 100%);
-        padding: 2.5px;
+        padding: 2px;
         margin: auto;
     }
 
     .spect-content {
-        width: 77vw;
-        min-height: 30vh;
+        max-width: 1000px;
+        min-height: 350px;
         background-color: #090907;
         display: flex;
-        justify-content: center;
-        padding: 1rem 5rem;
+        align-items: center;
+        padding-left: 70px;
+        padding-right: 25px;
         border-radius: 36px;
         margin: 0;
         gap: 40px;
     }
-
-    .spect-content div {
-        min-height: 350px;
-        gap: 10px;
-    }
-
+    
     .left {
-        width: 500px;
+        max-width: 380px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 25px;
+        margin-right: 20px;
     }
 
     .left h1 {
-        width: 400px;
-        font-size: 3rem;
-        font-weight: 800;
-        letter-spacing: 2px;
-        word-spacing: 6px;
-        line-height: 1.1;
-        margin-bottom: 20px;
+        font-size: 2.5rem;
     }
 
-    .left .presentation {
-        width: 450px;
-        font-size: 16px;
-        line-height: 1.5;
-        font-weight: 500;
+    .left p {
+        width: 80%;
     }
 
     .right {
-        width: 500px;
-        height: auto;
-        margin-bottom: 20px;
         display: flex;
-        gap: 20px;
-    }
-    
-    .right div {
-        margin-top: 40px;
+        gap: 30px;
     }
 
-    .right div p {
+    .right div p:nth-child(1) {
+        margin-top: 36px;
         text-align: left;
-        width: auto;
         font-size: 16px;
         font-weight:600;
     }
-
-    @media(max-width: 1440px) {
-        .spect-content {
-            flex-direction: column;
-            width: 99%;
-            text-align: center;
-            align-items: center;
+    
+    @media(max-width: 800px) {
+        .spect-gradient: {
+            width: 80%;
         }
-        .spect-content .left h1 {
+        .spect-content {
             width: 100%;
-            font-size: 36px;
-        }
-    }
-
-    @media(max-width: 840px) {
-        .spect-content {
-            padding: 30px 40px;
+            flex-direction: column;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 20px;
         }
 
-        .spect-content .left h1 {
-            max-width: 70%;
-            font-size: 24px;
+        .left {
+            width: 100%;
+            margin-left: 20px;
         }
-        .spect-content .left p {
-            max-width: 300px;
-            margin: 0 auto;
+
+        .rigth {
+            
         }
-        #image-branch {
-            margin-left: 10%;
-        }
+
     }
 
-    @media(max-width: 600px) {
-        .spect-content .left h1 {
-            font-size: 19px;    
-        }
-        .spect-content .left p {
-            width: 290px;
-            font-size: 14px;
-            text-align: justify;
-        }
-    }
 </style>
