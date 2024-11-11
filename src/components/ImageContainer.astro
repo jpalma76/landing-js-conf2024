@@ -5,7 +5,7 @@
 <div id="image-container" class="rounded-full mb-10">
     <div class="text-image">
         <p
-            class="text-yellow-500 z-10 ml-[20px] md:ml-[125px] w-[260px] mt-6 m-20 md:mb-40 opacity-50"
+            class="text-yellow-500 z-10 ml-[20px] md:ml-[125px] w-[260px] mt-6 m-20 md:mb-40 opacity-50 hover:transition"
         >
             Torres del paine <span class="text-white"
                 >- Región de Magallanes</span>
@@ -31,26 +31,25 @@
         height: 450px;
         background-color: blueviolet;
         margin: auto 0;
+        transition: .6s;
         background-image: 
         radial-gradient(
             transparent 25%,
             #090907 60%
             ),
-            url('../images/torres-del-paine.webp'); opacity: 0.7;
-            
+            url('../assets/torres-del-paine.webp'); opacity: 0.7;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        transition: .5s;
     }
     #image-container:hover {
+        transition: .6s;
         background-image:
-            radial-gradient(
+        radial-gradient(
                 transparent 25%,
                 #090907 60%
                 ), 
-            url('../images/ana_rangel.webp'); opacity: 0.4;
-        transition: .5s;
+            url('../assets/ana_rangel.webp'); opacity: 0.4;
     }
     .text-image p {
         text-align: center;

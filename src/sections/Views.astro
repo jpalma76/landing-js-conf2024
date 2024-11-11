@@ -1,19 +1,20 @@
 ---
-import {Image} from 'astro:assets';
-import Online from '../images/online.webp';
-import Presencial from '../images/presencial.webp';
+import { Image } from 'astro:assets';
+import Presencial from '../assets/presencial.webp';
+import Online from '../assets/Online.webp';
 ---
 
 <div class="views-container">
     <div class="view-online">
         <Image class="image-presencial" src={Online} alt="presencial" />
+        
         <article class="info-view-container">
             <h3>En Línea</h3>
             <p>Desde la comodidad de tu sillón, chatea con diferentes salas con ltros Devs.</p>
         </article>
     </div>
     <div class="view-presential">
-        <Image class="image-online" src={Presencial} alt="presencial" />
+        <Image class="image-presencial" src={Presencial} alt="presencial" />
         <article class="info-view-container">
             <h3>Presencial</h3>
             <p>Conecta con exponentes y Devs estelares, obtén stickers, poleras y Swag oficial de la JSConf y encuentra tu próxima empresa</p>
