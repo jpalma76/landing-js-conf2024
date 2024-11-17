@@ -21,8 +21,11 @@ importers:
         specifier: ^4.16.10
         version: 4.16.10(rollup@4.24.0)(typescript@5.6.2)
       core-js:
-        specifier: ^3.38.1
-        version: 3.38.1
+        specifier: ^2.6.12
+        version: 2.6.12
+      sharp:
+        specifier: ^0.33.5
+        version: 0.33.5
       tailwind:
         specifier: ^4.0.0
         version: 4.0.0
@@ -32,6 +35,9 @@ importers:
       typescript:
         specifier: ^5.6.2
         version: 5.6.2
+      uuid:
+        specifier: 3.3.2
+        version: 3.3.2
 
 packages:
 
@@ -970,9 +976,6 @@ packages:
   core-js@2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
     deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
-
-  core-js@3.38.1:
-    resolution: {integrity: sha512-OP35aUorbU3Zvlx7pjsFdu1rGNnD4pgw/CWoYzRY3t2EzoVT7shKHY1dlAy3f41cGIO7ZDPQimhGFTlEYkG/Hw==}
 
   core-util-is@1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -3852,13 +3855,11 @@ snapshots:
     dependencies:
       color-name: 1.1.4
       simple-swizzle: 0.2.2
-    optional: true
 
   color@4.2.3:
     dependencies:
       color-convert: 2.0.1
       color-string: 1.9.1
-    optional: true
 
   comma-separated-tokens@2.0.3: {}
 
@@ -3903,8 +3904,6 @@ snapshots:
   cookie@0.7.2: {}
 
   core-js@2.6.12: {}
-
-  core-js@3.38.1: {}
 
   core-util-is@1.0.3: {}
 
@@ -3981,8 +3980,7 @@ snapshots:
 
   destroy@1.0.4: {}
 
-  detect-libc@2.0.3:
-    optional: true
+  detect-libc@2.0.3: {}
 
   deterministic-object-hash@2.0.2:
     dependencies:
@@ -4504,8 +4502,7 @@ snapshots:
       call-bind: 1.0.7
       get-intrinsic: 1.2.4
 
-  is-arrayish@0.3.2:
-    optional: true
+  is-arrayish@0.3.2: {}
 
   is-bigint@1.0.4:
     dependencies:
@@ -5615,7 +5612,6 @@ snapshots:
       '@img/sharp-wasm32': 0.33.5
       '@img/sharp-win32-ia32': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:
@@ -5644,7 +5640,6 @@ snapshots:
   simple-swizzle@0.2.2:
     dependencies:
       is-arrayish: 0.3.2
-    optional: true
 
   sisteransi@1.0.5: {}
 
