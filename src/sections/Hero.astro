@@ -5,9 +5,9 @@ import SectionButtons from "../components/SectionButtons.astro";
 import ImageContainer from "../components/ImageContainer.astro";
 ---
 <Section>
-    <div id="hero-container" class="principal-div">
-        <div id="hero-left" class="left">
-            
+    <div class="hero-container">
+
+        <div class="hero-left">
             <JsConfTitle class="w-[230px] h-[150px]" />
 
             <p class="min-w-[350px] text-sm text-justify mb-5">
@@ -27,7 +27,7 @@ import ImageContainer from "../components/ImageContainer.astro";
 </Section>
 
 <style>
-    .principal-div {
+    .hero-container {
         width: 80%;
         height: auto;
         display: flex;
@@ -36,7 +36,7 @@ import ImageContainer from "../components/ImageContainer.astro";
         gap: 50px;
     }
 
-    .left {
+    .hero-left {
         width:400px;
         display: flex;
         flex-direction: column;
@@ -45,13 +45,13 @@ import ImageContainer from "../components/ImageContainer.astro";
     }
 
     @media (max-width: 800px) {
-        .principal-div {
+        .hero-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        .left {
+        .hero-left {
             width: 70%;
             gap: 10px;
             padding: 30px 50px;
@@ -60,18 +60,18 @@ import ImageContainer from "../components/ImageContainer.astro";
             justify-content: center;
         }
 
-        #right {
+        .hero-right {
             width: 80%;
         }
 
     }
 
     @media(max-width:400px) {
-        #principal-div #left {
+        .hero-container .hero-left {
             width: 80%;
         }
 
-        #principal-div #left p {
+        .hero.container .hero-left p {
             text-align: left;
         }
     }
