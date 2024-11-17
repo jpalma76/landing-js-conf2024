@@ -13,14 +13,14 @@ import Section from "../components/Section.astro";
                 </p>
             </div>
 
-            <div class="right pt-8">
+            <div class="right">
                 <BranchEvent />
                 <div>
                     <p class="mb-7">Workshop dentro del mismo recinto </p>
                     <p class="mb-8">Áreas de descanso</p>
                     <p class="mb-8">Swag bag con temática de la JSConf Chile 2024</p>
                     <p class="mb-8 underline text-yellow-400/80">Código de conducta</p>
-                    <p class="">Coffee Break los días del evento</p>
+                    <p class="mb-1">Coffee Break los días del evento</p>
                 </div>
             </div>
         </div>
@@ -73,6 +73,7 @@ import Section from "../components/Section.astro";
     .right {
         display: flex;
         gap: 30px;
+        padding-top: 16px;
     }
 
     .right div p:nth-child(1) {
@@ -100,7 +101,7 @@ import Section from "../components/Section.astro";
         }
 
         .rigth {
-            
+            width: 100%;
         }
 
     }

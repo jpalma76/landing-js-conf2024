@@ -1,17 +1,79 @@
 ---
 import Section from "../components/Section.astro";
+import { Image } from "astro:assets";
+import Volcan from '../assets/volcan-info-sponsors.webp';
 
 ---
 <Section>
     <div class="sponsor-container">
+        
+        <Image src={Volcan} alt="Volcan" />
+
+        <div class="sponsor-description">
+            <h3>Nuestros Sponsors</h3>
+            
+            <p>Asóciate con JSConf Chile como patrocinador y posiciona tu marca en la vanguardia de la industria tecnológica. Esta oportunidad única te permite conectar con líderes de pensamiento, ganar una exposición significativa y contribuir al crecimiento de la comunidad tecnológica. Tu apoyo ayuda a fomentar la innovación y conectar con una audiencia diversa.</p>
+            
+            <button class="button-sponsor">
+                Quiero ser Sponsor
+            </button>
+
+        </div>
+
+        <div class="sponsor-classification">
+            <h3>Platinum Sponsor</h3>
+        </div>
 
     </div>
 </Section>
 
 <style>
     .sponsor-container {
-        background-color: blueviolet;
         width: 1000px;
         height: 400px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        padding: 30px 40px;
+        gap: 50px;
+    }
+
+    .sponsor-description {
+        width:350px;
+        height: 388px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sponsor-description h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .button-sponsor {
+        width: 180px;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+
+    }
+
+    .sponsor-classification {
+        width: 556px;
+        height: 357px;
+        border: 1px solid;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .sponsor-classification h3 {
+        font-size: 2.5rem;
     }
 </style>
