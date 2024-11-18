@@ -2,6 +2,7 @@
 import Section from "../components/Section.astro";
 import { Image } from "astro:assets";
 import Volcan from '../assets/volcan-info-sponsors.webp';
+import Star from "../components/Star.astro";
 
 ---
 <Section>
@@ -16,6 +17,7 @@ import Volcan from '../assets/volcan-info-sponsors.webp';
             
             <button class="button-sponsor">
                 Quiero ser Sponsor
+                <Star class="size-4 text-black" />
             </button>
 
         </div>
@@ -58,13 +60,17 @@ import Volcan from '../assets/volcan-info-sponsors.webp';
 
     .button-sponsor {
         width: 200px;
-        padding: 7px 10px;
+        padding: 10px 15px;
         font-weight: 500;
         border: 1px solid black;
-        border-radius: 5px;
+        border-radius: 8px;
         background-color: white;
         color: black;
-
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
     }
 
     .sponsor-classification {
