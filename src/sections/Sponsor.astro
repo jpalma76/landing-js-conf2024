@@ -3,7 +3,9 @@ import Section from "../components/Section.astro";
 import { Image } from "astro:assets";
 import Volcan from '../assets/volcan-info-sponsors.webp';
 import Star from "../components/Star.astro";
-
+import PlatinumSponsor from "../components/Platinum-sponsor.astro";
+import Heroku from "../components/Heroku.astro";
+import GoogleCloud from "../assets/Google-Cloud.webp";
 ---
 <Section>
     <div class="sponsor-container">
@@ -23,7 +25,9 @@ import Star from "../components/Star.astro";
         </div>
 
         <div class="sponsor-classification">
-            <h3>Platinum Sponsor</h3>
+            <PlatinumSponsor />
+            <Heroku class="w-[430px]"/>
+            <Image class="w-[350px]" src={GoogleCloud} alt="Google Cloud" />
         </div>
 
     </div>
@@ -32,12 +36,13 @@ import Star from "../components/Star.astro";
 <style>
     .sponsor-container {
         width: 1200px;
-        height: 400px;
+        height: 410px;
         border-radius: 25px;
         display: flex;
         align-items: center;
         padding: 30px 40px;
-        gap: 50px;
+        gap: 30px;
+        
     }
 
     .sponsor-description {
@@ -47,11 +52,12 @@ import Star from "../components/Star.astro";
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+        margin-right: 10px;
     }
 
     .sponsor-description h3 {
         font-size: 1.8rem;
-        font-weight: 500;
+        font-weight: 450;
     }
 
     .sponsor-description p {
@@ -59,7 +65,7 @@ import Star from "../components/Star.astro";
     }
 
     .button-sponsor {
-        width: 200px;
+        width: 210px;
         padding: 10px 15px;
         font-weight: 500;
         border: 1px solid black;
@@ -73,15 +79,21 @@ import Star from "../components/Star.astro";
         gap: 7px;
     }
 
+    .button-sponsor:hover {
+        background-color: #efe060;
+    }
+
     .sponsor-classification {
         width: 546px;
-        height: 357px;
-        border: 1px solid rgb(141, 132, 52);
+        height: 360px;
+        border: 1px solid;
         border-radius: 25px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        background-image: linear-gradient(-45deg, #363434 30%,#222 100%);
     }
 
     .sponsor-classification h3 {
