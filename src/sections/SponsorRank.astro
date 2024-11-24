@@ -5,13 +5,19 @@ import { Image } from 'astro:assets';
 import AudienceView from '../assets/AudienceView-Logo.png'
 import bronzeSponsor from '../assets/bronze-sponsor.png';
 import Front from '../components/Front.astro';
+import bciLogo from '../assets/BCI-Logo.webp';
+import cloudflare from '../assets/Cloudflare-Logo.webp';
+import boolean from '../assets/boolean.webp';
+import deno from '../assets/deno.svg';
+import airbo from '../assets/airbo.webp';
+
 ---
 <Section>
     <div class="sponsorRank-container">
         <div class="gold-sponsor">
-            <GoldSponsor />
+            <GoldSponsor class="h-80" />
             <div class="sponsor-container">
-                <Image class="sponsor" src={AudienceView} alt="Audience View" />
+                <Image class="sponsor" src={AudienceView} alt="vistas audiencias" />
                 <Front class="w-[280px]" />
             </div>
         </div>
@@ -21,13 +27,22 @@ import Front from '../components/Front.astro';
                 <Image class="logo-bronce-sponsor" src={bronzeSponsor} alt="Bronce Sponsor" />
                 <span class="bronze-text">Bronze Sponsor</span>
             </div>
+            <div class="w-full flex justify-center gap-x-10">
+                <Image class="w-auto max-h-20" src={bciLogo} alt="Logo BCI" />
+                <Image class="w-auto max-h-20" src={cloudflare} alt="Cloudflare" />
+                <Image class="w-auto max-h-20" src={boolean} alt="Boolean" />
+                <Image class="w-auto max-h-20 mb-5" src={deno} alt="Deno" />
+            </div>
+            <div class="w-full flex justify-center gap-x-10">
+                <Image class="w-auto max-h-16" src={airbo} alt="Aribo" />
+            </div>
         </div>
     </div>
 </Section>
 
 <style>
     .sponsorRank-container {
-        width: 1136px;
+        width: 1200px;
         height: 600px;
         display: flex;
         flex-direction: column;
@@ -38,6 +53,8 @@ import Front from '../components/Front.astro';
         width: 350px;
     }
     .sponsor-container {
+        width: 1200px;
+        height: 650px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -45,7 +62,7 @@ import Front from '../components/Front.astro';
     }
     .gold-sponsor {
         width: 100%;
-        height: 300px;
+        min-height: 320px;
         border: 1px solid #efe060;
         border-radius: 24px;
         background-image: linear-gradient(.07deg,#50481d33 .03%,#0000 95.96%),radial-gradient(95.25% 166.54% at 98.39% 2.85%,#3635269e 8%,#09090700 80%);
@@ -55,10 +72,9 @@ import Front from '../components/Front.astro';
         justify-content: center;
         padding-top: 20px;
     }
-
     .bronze-sponsor {
         width: 100%;
-        height: 300px;
+        min-height: 330px;
         border: 1px solid #efe060;
         border-radius: 24px;
         background-image: linear-gradient(#0000 4.04%,#361c1333 99.97%),radial-gradient(95.25% 166.54% at 98.39% 2.85%,#361c1333 8%,#0000 80%);
@@ -66,7 +82,7 @@ import Front from '../components/Front.astro';
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 20px;
+        gap: 16px;
     }
     .logo-bronze-container {
         display: flex;
@@ -80,4 +96,5 @@ import Front from '../components/Front.astro';
     .logo-bronce-sponsor {
         width: 80px;
     }
+
 </style>
