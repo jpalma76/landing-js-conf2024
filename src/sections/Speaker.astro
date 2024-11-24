@@ -9,9 +9,15 @@ import RitaKoslov from "../assets/speakers/rita-koslov.webp";
 import MajaWichrowska from "../assets/speakers/maja-wichrowska-1.webp";
 import JuanPabloOrtiz from "../assets/speakers/juan-pablo-ortiz-1.webp";
 
-// logos
-import PlatziLogo from "../components/PlatziLogo.astro";
 import ArrowUpRight from "../components/ArrowUpRight.astro";
+import Midudev5 from "../assets/logos/midudev-5.webp";
+import RedFlame from "../assets/logos/lewis-liu-5.webp";
+import Cloudflare from "../assets/logos/rita-kozlov-5.webp";
+import Notion from "../assets/logos/maja-wichrowska-5.webp";
+import Amazon from "../assets/logos/juan-pablo-ortiz-5.webp";
+
+// logos
+import PlatziLogo from "../assets/logos/PlatziLogo.astro";
 ---
 
 <Section>
@@ -31,33 +37,37 @@ import ArrowUpRight from "../components/ArrowUpRight.astro";
           </span>
         </div>
       </div>
+
       <div class="speaker-card">
         <Image class="image-speaker" src={Midudev} alt="Miguel Alngel Durán" />
         <div class="speaker-info">
           <h3 class="text-2xl font-semibold my-2">Miguel Ángel Durán</h3>
           <span class="text-2xl font-bold">
-            <PlatziLogo class="w-72" />
+            <Image src={Midudev5} alt="logo midudev"/>
           </span>
         </div>
       </div>
+
       <div class="speaker-card">
         <Image class="image-speaker" src={LewisLiu} alt="Lewis Liu" />
         <div class="speaker-info">
           <h3 class="text-2xl font-semibold my-2">Lewis Liu</h3>
           <span class="text-2xl font-bold">
-            <PlatziLogo class="w-72" />
+            <Image src={RedFlame} alt="logo midudev"/>
           </span>
         </div>
       </div>
+
       <div class="speaker-card">
         <Image class="image-speaker" src={RitaKoslov} alt="Rita Koslov" />
         <div class="speaker-info">
           <h3 class="text-2xl font-semibold my-2">Rita Koslov</h3>
           <span class="text-2xl font-bold">
-            <PlatziLogo class="w-72" />
+            <Image src={Cloudflare} alt="logo midudev"/>
           </span>
         </div>
       </div>
+
       <div class="speaker-card">
         <Image
           class="image-speaker"
@@ -67,10 +77,11 @@ import ArrowUpRight from "../components/ArrowUpRight.astro";
         <div class="speaker-info">
           <h3 class="text-2xl font-semibold my-2">Maja Wichorowska</h3>
           <span class="text-2xl font-bold">
-            <PlatziLogo class="w-72" />
+            <Image src={Notion} alt="logo midudev"/>
           </span>
         </div>
       </div>
+      
       <div class="speaker-card">
         <Image
           class="image-speaker"
@@ -80,11 +91,12 @@ import ArrowUpRight from "../components/ArrowUpRight.astro";
         <div class="speaker-info">
           <h3 class="text-2xl font-semibold my-2">Juan Pablo Ortiz</h3>
           <span class="text-2xl font-bold">
-            <PlatziLogo class="w-72" />
+            <Image src={Amazon} alt="logo midudev"/>
           </span>
         </div>
       </div>
     </section>
+
     <section class="buttons">
       <button class="button-ver-mas">
         Ver más
