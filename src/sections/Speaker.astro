@@ -1,151 +1,161 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import Section from "../components/Section.astro";
 // pictures
-import TeffCode from '../assets/speakers/estefany-aguilar-restrepo-1.webp';
-import Midudev from '../assets/speakers/midudev.webp';
-import LewisLiu from '../assets/speakers/lewis-liu-1.webp';
-import RitaKoslov from '../assets/speakers/rita-koslov.webp';
-import MajaWichrowska from '../assets/speakers/maja-wichrowska-1.webp';
-import JuanPabloOrtiz from '../assets/speakers/juan-pablo-ortiz-1.webp';
+import TeffCode from "../assets/speakers/estefany-aguilar-restrepo-1.webp";
+import Midudev from "../assets/speakers/midudev.webp";
+import LewisLiu from "../assets/speakers/lewis-liu-1.webp";
+import RitaKoslov from "../assets/speakers/rita-koslov.webp";
+import MajaWichrowska from "../assets/speakers/maja-wichrowska-1.webp";
+import JuanPabloOrtiz from "../assets/speakers/juan-pablo-ortiz-1.webp";
 
 // logos
-import PlatziLogo from '../components/PlatziLogo.astro';
-import ArrowUpRight from '../components/ArrowUpRight.astro';
+import PlatziLogo from "../components/PlatziLogo.astro";
+import ArrowUpRight from "../components/ArrowUpRight.astro";
 ---
 
 <Section>
-    <div class="speaker-general-container">
-        <h1 class="title-speaker uppercase">Nuestros Charlistas</h1>
-        <div class="presentation">Únete a la primera edición de la más prestigiosa conferencia de JavaScript con exponentes nacionales e internacionales</div>
-        <section class="speaker-grid">
-            <div class="speaker-card">
-                <Image class="image-speaker" src={TeffCode} alt="Stefany Aguilar" />
-                <div class="speaker-info">
-                    <h3 class="text-2xl font-semibold my-2">Stefany Aguilar</h3>
-                    <span class="text-2xl font-bold">
-                        <PlatziLogo class="w-72 "/>
-                    </span>
-                </div>
-            </div>
-            <div class="speaker-card">
-                <Image class="image-speaker" src={Midudev} alt="Miguel Alngel Durán" />
-                <div class="speaker-info">
-                    <h3 class="text-2xl font-semibold my-2">Miguel Ángel Durán</h3>
-                    <span class="text-2xl font-bold">
-                        <PlatziLogo class="w-72 "/>
-                    </span>
-                </div>
-            </div>
-            <div class="speaker-card">
-                <Image class="image-speaker" src={LewisLiu} alt="Lewis Liu" />
-                <div class="speaker-info">
-                    <h3 class="text-2xl font-semibold my-2">Lewis Liu</h3>
-                    <span class="text-2xl font-bold">
-                        <PlatziLogo class="w-72 "/>
-                    </span>
-                </div>
-            </div>
-            <div class="speaker-card">
-                <Image class="image-speaker" src={RitaKoslov} alt="Rita Koslov" />
-                <div class="speaker-info">
-                    <h3 class="text-2xl font-semibold my-2">Rita Koslov</h3>
-                    <span class="text-2xl font-bold">
-                        <PlatziLogo class="w-72 "/>
-                    </span>
-                </div>
-            </div>
-            <div class="speaker-card">
-                <Image class="image-speaker" src={MajaWichrowska} alt="Maja Wichorowska" />
-                <div class="speaker-info">
-                    <h3 class="text-2xl font-semibold my-2">Maja Wichorowska</h3>
-                    <span class="text-2xl font-bold">
-                        <PlatziLogo class="w-72 "/>
-                    </span>
-                </div>
-            </div>
-            <div class="speaker-card">
-                <Image class="image-speaker" src={JuanPabloOrtiz} alt="Juan Pablo Ortiz" />
-                <div class="speaker-info">
-                    <h3 class="text-2xl font-semibold my-2">Juan Pablo Ortiz</h3>
-                    <span class="text-2xl font-bold">
-                        <PlatziLogo class="w-72 "/>
-                    </span>
-                </div>
-            </div>
-        </section>
-        <section class="buttons">
-            <button class="button-ver-mas">
-                Ver más
-                <ArrowUpRight />
-            </button>
-        </section>
+  <div class="speaker-general-container">
+    <h1 class="title-speaker uppercase">Nuestros Charlistas</h1>
+    <div class="presentation">
+      Únete a la primera edición de la más prestigiosa conferencia de JavaScript
+      con exponentes nacionales e internacionales
     </div>
+    <section class="speaker-grid">
+      <div class="speaker-card">
+        <Image class="image-speaker" src={TeffCode} alt="Stefany Aguilar" />
+        <div class="speaker-info">
+          <h3 class="text-2xl font-semibold my-2">Stefany Aguilar</h3>
+          <span class="text-2xl font-bold">
+            <PlatziLogo class="w-72" />
+          </span>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <Image class="image-speaker" src={Midudev} alt="Miguel Alngel Durán" />
+        <div class="speaker-info">
+          <h3 class="text-2xl font-semibold my-2">Miguel Ángel Durán</h3>
+          <span class="text-2xl font-bold">
+            <PlatziLogo class="w-72" />
+          </span>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <Image class="image-speaker" src={LewisLiu} alt="Lewis Liu" />
+        <div class="speaker-info">
+          <h3 class="text-2xl font-semibold my-2">Lewis Liu</h3>
+          <span class="text-2xl font-bold">
+            <PlatziLogo class="w-72" />
+          </span>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <Image class="image-speaker" src={RitaKoslov} alt="Rita Koslov" />
+        <div class="speaker-info">
+          <h3 class="text-2xl font-semibold my-2">Rita Koslov</h3>
+          <span class="text-2xl font-bold">
+            <PlatziLogo class="w-72" />
+          </span>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <Image
+          class="image-speaker"
+          src={MajaWichrowska}
+          alt="Maja Wichorowska"
+        />
+        <div class="speaker-info">
+          <h3 class="text-2xl font-semibold my-2">Maja Wichorowska</h3>
+          <span class="text-2xl font-bold">
+            <PlatziLogo class="w-72" />
+          </span>
+        </div>
+      </div>
+      <div class="speaker-card">
+        <Image
+          class="image-speaker"
+          src={JuanPabloOrtiz}
+          alt="Juan Pablo Ortiz"
+        />
+        <div class="speaker-info">
+          <h3 class="text-2xl font-semibold my-2">Juan Pablo Ortiz</h3>
+          <span class="text-2xl font-bold">
+            <PlatziLogo class="w-72" />
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="buttons">
+      <button class="button-ver-mas">
+        Ver más
+        <ArrowUpRight />
+      </button>
+    </section>
+  </div>
 </Section>
 
 <style>
-    .buttons {
-        width: 100%;
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .button-ver-mas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: black;
-        font-weight: 600;
-        background-color: #efe060;
-        width: 110px;
-        height: 40px;
-        border-radius: 7px;
-        gap: 5px;
-    }
-    .speaker-grid {
-        padding: 3rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 24px;
-    }
-    .speaker-general-container {
-        width: 80%;
-        min-height: 500px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding: 10rem;
-        margin: 3rem 0;
-    }
-    .speaker-info {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .title-speaker {
-        font-size: 36px;
-        font-weight: 600;
-        margin-bottom: 2rem;
-    }
-    .presentation {
-        width: 600px;
-        margin-bottom: 20px;
-    }
-    .speaker-card {
-        width: 295px;
-        height: 400px;
-        border: 2px solid #efe060;
-        border-radius: 18px;
-    }
-    .image-speaker {
-        border-radius: 16px 16px 0 0;
-        width: 310px;
-        height: 310px;
-    }
-
+  .buttons {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-ver-mas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+    background-color: #efe060;
+    width: 110px;
+    height: 40px;
+    border-radius: 7px;
+    gap: 5px;
+  }
+  .speaker-grid {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+  .speaker-general-container {
+    width: 80%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    margin: 3rem 0;
+  }
+  .speaker-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-speaker {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .presentation {
+    width: 600px;
+    margin-bottom: 20px;
+  }
+  .speaker-card {
+    width: 295px;
+    height: 395px;
+    border: 2px solid #efe060;
+    border-radius: 18px;
+  }
+  .image-speaker {
+    border-radius: 16px 16px 0 0;
+    width: 300px;
+    height: 300px;
+  }
 </style>
