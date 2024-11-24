@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Stefany Aguilar",
+        "company": "Platzi",
+        "image": "./assets/speakers/estefanyaguilar-restrepo-1.webp",
+        "logo": "./components/PlatziLogo.astro",
+        "link": ""
+    }
+]
