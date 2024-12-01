@@ -11,6 +11,7 @@ import GoogleCloud from "../assets/Google-Cloud.webp";
     <div class="sponsor-container">
         <div class="left">
             <Image class="volcan" src={Volcan} alt="Volcan" />
+            
             <div class="sponsor-description">
                 <h3>Nuestros Sponsors</h3>
                 
@@ -49,7 +50,7 @@ import GoogleCloud from "../assets/Google-Cloud.webp";
     }
     .sponsor-description {
         width:400px;
-        height: 388px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -105,12 +106,13 @@ import GoogleCloud from "../assets/Google-Cloud.webp";
     @media(max-width: 800px) {
         .sponsor-container {
             flex-direction: column;
-            min-height: 800px;
+            height: 900px;
+            gap: 80px;
         }
-        
-    }
 
-    @media(max-width: 600px) {
+        .sponsor-classification {
+            height: 360px;
+        }
         
     }
 
