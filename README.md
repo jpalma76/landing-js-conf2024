@@ -3,10 +3,9 @@
 ```sh
 npm create astro@latest -- --template basics
 ```
+Esta es mi version de la JsConf 2024, creada con el fin de practicar lo aprendido y aprender cosas nuevas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![image](https://github.com/user-attachments/assets/868eec2f-ae46-48bf-a859-f78fb31b5483)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
