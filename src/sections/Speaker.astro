@@ -27,7 +27,10 @@ import PlatziLogo from "../assets/logos/PlatziLogo.astro";
       Únete a la primera edición de la más prestigiosa conferencia de JavaScript
       con exponentes nacionales e internacionales
     </div>
+
+    <!-- Grilla de speakers -->
     <section class="speaker-grid">
+      
       <div class="speaker-card">
         <Image class="image-speaker" src={TeffCode} alt="Stefany Aguilar" />
         <div class="speaker-info">
@@ -107,6 +110,52 @@ import PlatziLogo from "../assets/logos/PlatziLogo.astro";
 </Section>
 
 <style>
+    .speaker-general-container {
+    max-width: 1100px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem;
+    margin: 3rem 0;
+  }
+  .title-speaker {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  .presentation {
+    width: 600px;
+    margin-bottom: 3rem;
+  }
+
+  .speaker-grid {
+    width: 850px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
+  }
+  .speaker-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .speaker-card {
+    width: 270px;
+    height: 360px;
+    border: 2px solid #efe060;
+    border-radius: 18px;
+  }
+  .image-speaker {
+    border-radius: 16px 16px 0 0;
+    width: 270px;
+    height: 270px;
+  }
+
   .buttons {
     width: 100%;
     height: 120px;
@@ -126,48 +175,6 @@ import PlatziLogo from "../assets/logos/PlatziLogo.astro";
     border-radius: 7px;
     gap: 5px;
   }
-  .speaker-grid {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-  }
-  .speaker-general-container {
-    width: 80%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 10rem;
-    margin: 3rem 0;
-  }
-  .speaker-info {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .title-speaker {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 2rem;
-  }
-  .presentation {
-    width: 600px;
-    margin-bottom: 20px;
-  }
-  .speaker-card {
-    width: 295px;
-    height: 395px;
-    border: 2px solid #efe060;
-    border-radius: 18px;
-  }
-  .image-speaker {
-    border-radius: 16px 16px 0 0;
-    width: 300px;
-    height: 300px;
-  }
+
+
 </style>

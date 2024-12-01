@@ -19,7 +19,7 @@ import Volunteers from '../sections/Volunteers.astro';
 	description="Proyecto - landing de la JSConf2024 desarrollada por Juan Palma @jpalma76"
 >
 	<Header />	
-	<main class="w-[100%] box-content md:w-[90%] min-h-[100vh] gap-y-12 flex flex-col">
+	<main class="main-container">
 		<div class="space-top"></div>
 		<Hero />
 		<Principal />
@@ -40,4 +40,18 @@ import Volunteers from '../sections/Volunteers.astro';
         width:100%;
         height: 80px;
     }
+	.main-container {
+		width: 80%;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		align-items: center ;
+		gap: 20px;
+	}
+	@media(max-width: 600px) {
+		.main-container {
+			width: 550px;
+		}
+		
+	}
 </style>

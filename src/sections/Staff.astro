@@ -7,10 +7,11 @@ import AnaRangel from "../assets/staff/ana-rangel.webp";
 import AlfonsinaLizardo from "../assets/staff/alfonsina-lizardo.webp";
 import CeciliaGeraldo from "../assets/staff/cecilia-geraldo.webp";
 import FabianArismendi from "../assets/staff/fabian-arismendi.webp";
-import JoseLizama from "../assets/staff/jose-lesama.webp";
+import JoseLizama from "../assets/staff/jose-lezama.webp";
 import LeslieHerrera from "../assets/staff/rodrigo-vasquez.webp";
 import MartinCalderon from "../assets/staff/rodrigo-vasquez.webp";
 import RodrigoVasquez from "../assets/staff/rodrigo-vasquez.webp";
+
 import LinkedInIcon from "../assets/rrss/LinkedInIcon.astro";
 import InstagramIcon from "../assets/rrss/InstagramIcon.astro";
 import GitHubIcon from "../components/icon-component/GitHubIcon.astro";
@@ -25,88 +26,88 @@ import GitHubIcon from "../components/icon-component/GitHubIcon.astro";
                 <h3>Ricardo Castillo</h3>
                 <ul class="rrss">
                     <li>
-                        <LinkedInIcon class="size-6" />
+                        <LinkedInIcon class="size-5" />
                     </li>
                     <li>
-                        <InstagramIcon class="size-6"/>
+                        <InstagramIcon class="size-5"/>
                     </li>
                     <li>
-                        <GitHubIcon class="size-6"/>
-                    </li>
-                </ul>
-            </div>
-            <div class="individual-staff">
-                <Image class="staff-avatar" src={RicardoCastillo} alt="Ricardo Castillo" />
-                <h3>Ricardo Castillo</h3>
-                <ul class="rrss">
-                    <li>
-                        <LinkedInIcon class="size-6" />
-                    </li>
-                    <li>
-                        <InstagramIcon class="size-6"/>
-                    </li>
-                    <li>
-                        <GitHubIcon class="size-6"/>
+                        <GitHubIcon class="size-5"/>
                     </li>
                 </ul>
             </div>
             <div class="individual-staff">
-                <Image class="staff-avatar" src={RicardoCastillo} alt="Ricardo Castillo" />
-                <h3>Ricardo Castillo</h3>
+                <Image class="staff-avatar" src={AnaRangel} alt="Ana Rangel" />
+                <h3>Ana Rangel</h3>
                 <ul class="rrss">
                     <li>
-                        <LinkedInIcon class="size-6" />
+                        <LinkedInIcon class="size-5" />
                     </li>
                     <li>
-                        <InstagramIcon class="size-6"/>
+                        <InstagramIcon class="size-5"/>
                     </li>
                     <li>
-                        <GitHubIcon class="size-6"/>
+                        <GitHubIcon class="size-5"/>
                     </li>
                 </ul>
             </div>
             <div class="individual-staff">
-                <Image class="staff-avatar" src={RicardoCastillo} alt="Ricardo Castillo" />
-                <h3>Ricardo Castillo</h3>
+                <Image class="staff-avatar" src={AlfonsinaLizardo} alt="Alfonsina Lizardo" />
+                <h3>Alfonsina Lizardo</h3>
                 <ul class="rrss">
                     <li>
-                        <LinkedInIcon class="size-6" />
+                        <LinkedInIcon class="size-5" />
                     </li>
                     <li>
-                        <InstagramIcon class="size-6"/>
+                        <InstagramIcon class="size-5"/>
                     </li>
                     <li>
-                        <GitHubIcon class="size-6"/>
+                        <GitHubIcon class="size-5"/>
                     </li>
                 </ul>
             </div>
             <div class="individual-staff">
-                <Image class="staff-avatar" src={RicardoCastillo} alt="Ricardo Castillo" />
-                <h3>Ricardo Castillo</h3>
+                <Image class="staff-avatar" src={CeciliaGeraldo} alt="Cecilia Geraldo" />
+                <h3>Cecilia Geraldo</h3>
                 <ul class="rrss">
                     <li>
-                        <LinkedInIcon class="size-6" />
+                        <LinkedInIcon class="size-5" />
                     </li>
                     <li>
-                        <InstagramIcon class="size-6"/>
+                        <InstagramIcon class="size-5"/>
                     </li>
                     <li>
-                        <GitHubIcon class="size-6"/>
+                        <GitHubIcon class="size-5"/>
                     </li>
                 </ul>
             </div>
             <div class="individual-staff">
-                <Image class="staff-avatar" src={RicardoCastillo} alt="Ricardo Castillo" />
-                <h3>Ricardo Castillo</h3>
+                <Image class="staff-avatar" src={FabianArismendi} alt="Fabián Arismendi" />
+                <h3>Fabián Arismendi</h3>
                 <ul class="rrss">
                     <li>
-                        <LinkedInIcon class="size-6" />
+                        <LinkedInIcon class="size-5" />
                     </li>
                     <li>
-                        <InstagramIcon class="size-6"/>
+                        <InstagramIcon class="size-5"/>
                     </li>
                     <li>
-                        <GitHubIcon class="size-6"/>
+                        <GitHubIcon class="size-5"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="individual-staff">
+                <Image class="staff-avatar" src={JoseLizama} alt="Jose Lezama" />
+                <h3>José Lezama</h3>
+                <ul class="rrss">
+                    <li>
+                        <LinkedInIcon class="size-5" />
+                    </li>
+                    <li>
+                        <InstagramIcon class="size-5"/>
+                    </li>
+                    <li>
+                        <GitHubIcon class="size-5"/>
                     </li>
                 </ul>
             </div>
@@ -116,7 +117,7 @@ import GitHubIcon from "../components/icon-component/GitHubIcon.astro";
 
 <style>
     .staff-container{
-        width: 1000px;
+        width: 1100px;
         min-height: 450px;
         display: flex;
         flex-direction: column;
@@ -132,24 +133,28 @@ import GitHubIcon from "../components/icon-component/GitHubIcon.astro";
         margin-bottom: 5rem;
     }
     .staff-wrapper {
-        display: flex;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        justify-content: center;
+        gap: 10px;
     }
     .individual-staff {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 213.2px;
-        height: 221.94px;
-        padding: 1.5rem;
-        gap: 1rem;
+        justify-content: center;
+        width: 190px;
+        height: 190px;
+        gap: 10px;
     }
     .individual-staff h3 {
-        font-size: 22px;
-        font-weight: bold;
+        font-size: 20px;
+        font-weight: 600;
     }
     .staff-avatar {
-        width: 84.8px;
-        height: 84.8px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         border: 1px solid #fff;
         filter: grayscale();

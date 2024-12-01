@@ -32,24 +32,24 @@ import Section from "../components/Section.astro";
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 1200px;
-        min-height: 400px;
+        width: 1100px;
+        min-height: 450px;
         border-radius: 36px;
         background-image: linear-gradient(45deg,#3d3d2d 10%,#d4d114 100%);
-        padding: 2.3px;
+        padding: 3px;
         margin: auto;
     }
 
     .spect-content {
-        max-width: 1200px;
-        min-height: 400px;
+        width: 1100px;
+        min-height: 450px;
         background-color: #090907;
         display: flex;
         align-items: center;
         padding-left: 70px;
         padding-right: 25px;
         border-radius: 36px;
-        margin: 0;
+        margin: auto;
         gap: 40px;
     }
     
@@ -84,11 +84,13 @@ import Section from "../components/Section.astro";
     }
     
     @media(max-width: 800px) {
-        .spect-gradient: {
-            width: 80%;
+        .spect-gradient {
+            width: 100%;
+            margin: 10px 40px;
         }
         .spect-content {
             width: 100%;
+            height: 750px;
             flex-direction: column;
             padding-top: 50px;
             padding-left: 50px;
@@ -104,6 +106,15 @@ import Section from "../components/Section.astro";
             width: 100%;
         }
 
+    }
+
+    @media(max-width: 600px) {
+        .left h1 {
+            font-size: 2rem;
+        }
+        .left p {
+            width: 290px;
+        }
     }
 
 </style>

@@ -44,6 +44,11 @@ import ImageContainer from "../components/ImageContainer.astro";
         margin-bottom: 65px;
     }
 
+    .hero-right {
+        margin: 0;
+        padding: 0;
+    }
+
     @media (max-width: 800px) {
         .hero-container {
             display: flex;
@@ -52,7 +57,7 @@ import ImageContainer from "../components/ImageContainer.astro";
         }
 
         .hero-left {
-            width: 70%;
+            width: 90%;
             gap: 10px;
             padding: 30px 50px;
             display:flex;
@@ -61,18 +66,9 @@ import ImageContainer from "../components/ImageContainer.astro";
         }
 
         .hero-right {
-            width: 80%;
+            width: 100%;
         }
 
     }
 
-    @media(max-width:400px) {
-        .hero-container .hero-left {
-            width: 80%;
-        }
-
-        .hero.container .hero-left p {
-            text-align: left;
-        }
-    }
 </style>

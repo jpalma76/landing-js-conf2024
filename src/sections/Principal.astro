@@ -6,7 +6,7 @@ import Section from "../components/Section.astro";
 <Section>
     <div class="principal-container">
         <CardLeft />
-        <div class="flex flex-col max-w-[600px] p-16 gap-y-5 text-center">
+        <div class="description">
             <h2 class="text-3xl font-bold mb-2">Que es la JsConf</h2>
             <p class="text-justify ml-10">La JSConf es una <span class="text-[#ede060]">conferencia técnica única a nivel mundial</span> con una visión de mejorar la comunidad tecnológica, haciéndola más diversa y humana.</p>
             <p class="text-justify ml-10">Amplía tus conocimientos, conecta con otros, mantente informado, participa en debates y actualízate con las tendencias de JavaScript en nuestra conferencia única. ¡Optimiza ingresos y sé parte de algo grande!</p>
@@ -16,8 +16,28 @@ import Section from "../components/Section.astro";
 
 <style>
     .principal-container {
-        width: 1200px;
+        width: 1100px;
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .principal-container .description {
+        margin-top: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .principal-container div p {
+        width: 380px;
+        font-size: 18px;
+    }
+    
+    @media (max-width: 800px) {
+        .principal-container {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 </style>

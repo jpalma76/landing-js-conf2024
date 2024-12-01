@@ -8,26 +8,20 @@ import ArrowUp from './ArrowUp.astro';
         <JsConfIco class='size-7'/>
     </a>
     <ul class='flex gap-6 items-center w-auto mx-0 text-md'>
-        <li>Home</li>
+        <li>Inicio</li>
         <li>Agenda</li>
         <li>Charlistas</li>
         <li>Sponsors</li>
         <li>¿Por qué?</li>
-        <li>Ticket</li>
         <li>Ubicación</li>
-        <li>Voluntario</li>
         <li>Código de Conducta</li>
-        <li>CFP</li>
-        <li>Preguntas</li>
-        <div class="flex items-center gap-3">
-            <img
-                class='w-9 rounded-full border border-yellow-500/80 hover:rotate-180 transition' 
-                src='https://porfolio-blue.netlify.app/images/foto-mia.webp' 
-                alt="foto mia"
-            />
-            <ArrowUp class="size-3 hover:rotate-180 transition-[0.3s]" />
-
-        </div>
+        <a 
+            href="/"
+            class="button-buy"
+        >
+            Comprar Tickets
+            <svg width="16" height="16" viewBox="0 0 24 24" data-astro-cid-vnzlvqnm="" data-icon="ticket">  <symbol id="ai:local:ticket"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v2a3 3 0 1 1 0 6v2c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2m10-2v2m0 10v2m0-8v2"></path></symbol><use xlink:href="#ai:local:ticket"></use>  </svg>
+        </a>
     </ul>
 </header>
 
@@ -41,6 +35,16 @@ import ArrowUp from './ArrowUp.astro';
 		border-bottom: 1px solid rgb(170, 161, 79);
 		transition: .3s;
 	}
+    .button-buy {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 16px;
+        border: 1px solid #c8bc4f;
+        border-radius: 6px;
+        font-weight: 600;
+    }
+
     @media (max-width: 1200px) {
         li {
             display: none;

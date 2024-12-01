@@ -1,9 +1,9 @@
 ---
-import GoldSponsor from "../components/GoldSponsor.astro";
 import Section from "../components/Section.astro";
 import { Image } from 'astro:assets';
 import AudienceView from '../assets/AudienceView-Logo.png'
 import bronzeSponsor from '../assets/bronze-sponsor.png';
+import goldSponsor from '../assets/gold-sponsor.png';
 import Front from '../components/Front.astro';
 import bciLogo from '../assets/BCI-Logo.webp';
 import cloudflare from '../assets/Cloudflare-Logo.webp';
@@ -15,26 +15,29 @@ import airbo from '../assets/airbo.webp';
 <Section>
     <div class="sponsorRank-container">
         <div class="gold-sponsor">
-            <GoldSponsor class="h-80" />
+            <div class="gold-title-sponsor">
+                <Image class="sponsor-logo" src={goldSponsor} alt="gold sponsor" />
+                <span>GOLD SPONSOR</span>
+            </div>
             <div class="sponsor-container">
-                <Image class="sponsor" src={AudienceView} alt="vistas audiencias" />
-                <Front class="w-[280px]" />
+                <Image class="sponsor-gold-logo" src={AudienceView} alt="AudienceView" />
+                <Front class="sponsor-gold-logo" />
             </div>
         </div>
 
         <div class="bronze-sponsor">
-            <div class="logo-bronze-container">
+            <div class="title-bronze-container">
                 <Image class="logo-bronce-sponsor" src={bronzeSponsor} alt="Bronce Sponsor" />
                 <span class="bronze-text">Bronze Sponsor</span>
             </div>
-            <div class="w-full flex justify-center gap-x-10">
-                <Image class="w-auto max-h-20" src={bciLogo} alt="Logo BCI" />
-                <Image class="w-auto max-h-20" src={cloudflare} alt="Cloudflare" />
-                <Image class="w-auto max-h-20" src={boolean} alt="Boolean" />
-                <Image class="w-auto max-h-20 mb-5" src={deno} alt="Deno" />
+            <div class="logo-bronze-container">
+                <Image class="sponsor-bronze-logo" src={bciLogo} alt="Logo BCI" />
+                <Image class="sponsor-bronze-logo" src={cloudflare} alt="Cloudflare" />
+                <Image class="sponsor-bronze-logo" src={boolean} alt="Boolean" />
+                <Image class="sponsor-bronze-logo" src={deno} alt="Deno" />
             </div>
             <div class="w-full flex justify-center gap-x-10">
-                <Image class="w-auto max-h-16" src={airbo} alt="Aribo" />
+                <Image class="sponsor-bronze-logo" src={airbo} alt="Aribo" />
             </div>
         </div>
     </div>
@@ -42,27 +45,16 @@ import airbo from '../assets/airbo.webp';
 
 <style>
     .sponsorRank-container {
-        width: 1200px;
-        height: 600px;
+        width: 100%;
+        min-height: 450px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 10%;
     }
-    
-    .sponsor {
-        width: 350px;
-    }
-    .sponsor-container {
-        width: 1200px;
-        height: 650px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 80px;
-    }
+
     .gold-sponsor {
         width: 100%;
-        min-height: 320px;
+        height: 280px;
         border: 1px solid #efe060;
         border-radius: 24px;
         background-image: linear-gradient(.07deg,#50481d33 .03%,#0000 95.96%),radial-gradient(95.25% 166.54% at 98.39% 2.85%,#3635269e 8%,#09090700 80%);
@@ -70,11 +62,43 @@ import airbo from '../assets/airbo.webp';
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 50px;
+        margin-bottom: 16px;
     }
+    
+    .sponsor-container {
+        width: 100%;
+        min-height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+    .gold-title-sponsor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        font-weight: 600;
+        gap: 10px;
+    }
+    .title-bronze-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sponsor-gold-logo {
+        width: 300px;
+        height: 80px;
+    }
+    .sponsor-logo {
+        width: 80px;
+        height: 80px;
+    }
+    
     .bronze-sponsor {
         width: 100%;
-        min-height: 330px;
+        height: 320px;
         border: 1px solid #efe060;
         border-radius: 24px;
         background-image: linear-gradient(#0000 4.04%,#361c1333 99.97%),radial-gradient(95.25% 166.54% at 98.39% 2.85%,#361c1333 8%,#0000 80%);
@@ -82,12 +106,14 @@ import airbo from '../assets/airbo.webp';
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 16px;
+        gap: 24px;
     }
     .logo-bronze-container {
+        width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 5rem;
     }
     .bronze-text {
         font-size: 38px;
@@ -95,6 +121,29 @@ import airbo from '../assets/airbo.webp';
     }
     .logo-bronce-sponsor {
         width: 80px;
+    }
+    .sponsor-bronze-logo {
+        width: 160px;
+    }
+
+    @media (max-width: 800px) {
+        .sponsor-rank {
+            height: auto;
+        }
+        .sponsor-container {
+            flex-direction: column;
+            height: 300px;
+            gap: 10px;
+        }
+        .gold-sponsor {
+            height: auto;
+        }
+
+        .logo-bronze-container {
+            flex-direction: column;
+            height: 500px;
+            gap: 10px;
+        }
     }
 
 </style>

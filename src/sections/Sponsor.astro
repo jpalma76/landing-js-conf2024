@@ -9,19 +9,18 @@ import GoogleCloud from "../assets/Google-Cloud.webp";
 ---
 <Section>
     <div class="sponsor-container">
-        
-        <Image src={Volcan} alt="Volcan" />
-
-        <div class="sponsor-description">
-            <h3>Nuestros Sponsors</h3>
-            
-            <p>Asóciate con JSConf Chile como patrocinador y posiciona tu marca en la vanguardia de la industria tecnológica. Esta oportunidad única te permite conectar con líderes de pensamiento, ganar una exposición significativa y contribuir al crecimiento de la comunidad tecnológica. Tu apoyo ayuda a fomentar la innovación y conectar con una audiencia diversa.</p>
-            
-            <button class="button-sponsor">
-                Quiero ser Sponsor
-                <Star class="size-4 text-black" />
-            </button>
-
+        <div class="left">
+            <Image class="volcan" src={Volcan} alt="Volcan" />
+            <div class="sponsor-description">
+                <h3>Nuestros Sponsors</h3>
+                
+                <p>Asóciate con JSConf Chile como patrocinador y posiciona tu marca en la vanguardia de la industria tecnológica. Esta oportunidad única te permite conectar con líderes de pensamiento, ganar una exposición significativa y contribuir al crecimiento de la comunidad tecnológica. Tu apoyo ayuda a fomentar la innovación y conectar con una audiencia diversa.</p>
+                
+                <button class="button-sponsor">
+                    Quiero ser Sponsor
+                    <Star class="size-4 text-black" />
+                </button>
+            </div>
         </div>
 
         <div class="sponsor-classification">
@@ -35,16 +34,19 @@ import GoogleCloud from "../assets/Google-Cloud.webp";
 
 <style>
     .sponsor-container {
-        width: 1200px;
+        width: 1100px;
         height: 410px;
         border-radius: 25px;
         display: flex;
         align-items: center;
         padding: 30px 40px;
         gap: 30px;
-        
     }
 
+    .left {
+        display: flex;
+        gap: 20px;
+    }
     .sponsor-description {
         width:400px;
         height: 388px;
@@ -99,4 +101,17 @@ import GoogleCloud from "../assets/Google-Cloud.webp";
     .sponsor-classification h3 {
         font-size: 1.8rem;
     }
+
+    @media(max-width: 800px) {
+        .sponsor-container {
+            flex-direction: column;
+            min-height: 800px;
+        }
+        
+    }
+
+    @media(max-width: 600px) {
+        
+    }
+
 </style>

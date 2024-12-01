@@ -7,10 +7,16 @@
 <style>
     .section-container {
         width: 100%;
-        min-height: 450px;
+        min-height: 550px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0.5rem auto;
+    }
+
+    @media(max-width: 800px) {
+        .section-container {
+            width: 100%;
+            padding: 90px;
+        }
     }
 </style>
