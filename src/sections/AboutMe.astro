@@ -1,20 +1,90 @@
 ---
+import { Image } from "astro:assets";
 import Section from "../components/Section.astro";
-
+import FotoMia from '../assets/foto-mia.webp';
 
 ---
 
 <Section>
     <div class="about-container">
+        <div class="left">
+            <div class="image-container">
+                <Image class="avatar" src={FotoMia} alt="Foto mia" />
+            </div>
+        </div>
 
+        <div class="right">
+            <h2>Hey, soy <span>Juan Palma</span>, Desarrollador Frontend Junior</h2>
+            
+            <p>
+                Desarrollador Frontend con +2años de experiencia en html, JavaScript Vanilla, CSS, JQuery, AstroJS, Tailwind, Bootstrap un poco de React, un poco de Python, PHP básico, mySQL, SQL básico, Git, Github, Node, Express, Multer, SQLite, JSON.
+            </p>
+            
+            <p>
+                Soy un apasionado con todo lo que tenga que ver con ponerme a prueba, aprender cosas nuevas, soy autodidacta y en mi crecimiento personal he aprendido una amplia variedad de habilidades.
+            </p>
+
+            <p>
+                Técnico en Informática, especializado en armado, reparación y configuración de computadores, sistemas operativos, Ubuntu, Debian, Windows.
+            </p>
+
+            <p>
+                Técnico en Telecomunicaciones con certificaciones en VTR en instalaciones domiciliarias.
+            </p>
+            
+        </div>
     </div>
     
 </Section>
 
 <style>
     .about-container {
+        display: flex;
         width: 1100px;
-        height: 550px;
-        border: 1px solid;
+        min-height: 550px;
+    }
+    .left .right {
+        min-height: 550px;
+    }
+    .left {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-container {
+        width: 250px;
+        height: 350px;
+    }
+    .avatar {
+        width: 100%;
+        border-radius: 50%;
+        /* background-image: url('../assets/foto-mia.webp'); */
+        background-image: radial-gradient(circle, #000 80%, transparent);
+    }
+    .right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .right h2 {
+        font-size: 28px;
+        font-weight: bold;
+        width: 450px;
+        text-align: center;
+        margin-bottom: 16px;
+        & span {
+            color: #efe060;
+        }
+    }
+
+    .right p {
+        width: 400px;
+        font-size: 18px;
+        text-align: justify;
+        margin-bottom: 16px;
     }
 </style>

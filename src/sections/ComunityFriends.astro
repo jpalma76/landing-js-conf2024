@@ -1,9 +1,204 @@
 ---
 import Section from "../components/Section.astro";
+import { Image } from "astro:assets";
 
----
+import MasMujeres from "../assets/communities/mujeresux.webp";
+import UxCorp from "../assets/communities/uxcorprangel.webp";
+import PythonChile from "../assets/communities/python.webp";
+import DevChile from "../assets/communities/DevsChile.webp";
+import AngularPeru from "../assets/communities/AngularPeru.webp";
+import CloudClubChile from "../assets/communities/cloudclubchile.webp";
+import UXFriends from "../assets/communities/ux-friends.webp";
+import CaribeDev from "../assets/communities/caribe-dev.webp";
+import Pioneras from "../assets/communities/pioneras.webp";
+import TechMermelada from "../assets/communities/mermelada-tech.webp";
+import WomenTech from "../assets/communities/wtm-chile.webp";
+import ComunityOS from "../assets/communities/community-os.webp";
+import NuevePuntoCinco from "../assets/communities/9p5.webp";
+import JsChile from "../assets/communities/JSChile.webp";
+ ---
+
 <Section>
-    <div class="comunityFriends-container">
-        
+  <div class="comunityFriends-container">
+    <h2 class="comunity-title">COMUNIDADES AMIGAS</h2>
+    
+    <div class="slider">  
+        <div class="slide-track">
+            <div class="slide-card">
+                <Image src={MasMujeres} alt="Más Mujeres UX" />
+                <h3>Más Mujeres UX</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={UxCorp} alt="UX Corp Rangel" />
+                <h3>UX Corp Rangel</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={PythonChile} alt="Python Chile" />
+                <h3>Python Chile</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={DevChile} alt="DevChile" />
+                <h3>DevChile</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={AngularPeru} alt="Angular Perú" />
+                <h3>Angular Perú</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={CloudClubChile} alt="Cloud Club Chile" />
+                <h3>Cloud Club</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={UXFriends} alt="UX Friends" />
+                <h3>UX Friends</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={CaribeDev} alt="Caribe Dev" />
+                <h3>Caribe Dev</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={Pioneras} alt="Pioneras" />
+                <h3>Pioneras</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={TechMermelada} alt="Mermelada Tech" />
+                <h3>Mermelada Tech</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={WomenTech} alt="Women Tech" />
+                <h3>Mermelada Tech</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={ComunityOS} alt="Comunity OS" />
+                <h3>Mermelada Tech</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={NuevePuntoCinco} alt="9 punto 5" />
+                <h3>9 punto 5</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={JsChile} alt="JS Chile" />
+                <h3>JS Chile</h3>
+            </div>
+            
+            <div class="slide-card">
+                <Image src={MasMujeres} alt="Más Mujeres UX" />
+                <h3>Más Mujeres UX</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={UxCorp} alt="UX Corp Rangel" />
+                <h3>UX Corp Rangel</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={PythonChile} alt="Python Chile" />
+                <h3>Python Chile</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={DevChile} alt="DevChile" />
+                <h3>DevChile</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={AngularPeru} alt="Angular Perú" />
+                <h3>Angular Perú</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={CloudClubChile} alt="Cloud Club Chile" />
+                <h3>Cloud Club</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={UXFriends} alt="UX Friends" />
+                <h3>UX Friends</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={CaribeDev} alt="Caribe Dev" />
+                <h3>Caribe Dev</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={Pioneras} alt="Pioneras" />
+                <h3>Pioneras</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={TechMermelada} alt="Mermelada Tech" />
+                <h3>Mermelada Tech</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={WomenTech} alt="Women Tech" />
+                <h3>Mermelada Tech</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={ComunityOS} alt="Comunity OS" />
+                <h3>Mermelada Tech</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={NuevePuntoCinco} alt="9 punto 5" />
+                <h3>9 punto 5</h3>
+            </div>
+            <div class="slide-card">
+                <Image src={JsChile} alt="JS Chile" />
+                <h3>JS Chile</h3>
+            </div>
+        </div>
     </div>
+  </div>
 </Section>
+
+<style>
+  .comunityFriends-container {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .comunity-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .slider {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slider .slide-track {
+    display: flex;
+    animation: scroll 40ms linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(150px * 28);
+    gap: 24px;
+  }
+
+  .slide-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 200px;
+    border: 1px solid;
+    gap: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, rgb(75, 75, 75) 20%, silver 70%, gray 90%);
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-200px * 14));
+      transform: translateX(calc(-200px * 14));
+    }
+  }
+</style>
